@@ -1,4 +1,3 @@
-
 h1. Status Quo
 
 p. Explain current status and shortcomings.
@@ -35,6 +34,8 @@ h1. Dependencies
 
 p. List of dependencies
 
+h1. Rollout
 
+p. Information abouts things to consider when rolling this feature out.
 
 
