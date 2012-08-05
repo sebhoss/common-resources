@@ -1,0 +1,40 @@
+
+h1. Status Quo
+
+p. Explain current status and shortcomings.
+
+h1. Goals
+
+p. Explain what should be fixed/changed.
+
+h1. User Experience
+
+p. What does the user see of the new feature?
+
+h1. Implementation Notes
+
+p. Details about the implementation.
+
+h1. How to Test
+
+p. How can the feature be verified?
+
+h1. Owner
+
+p. Name, E-Mail, etc
+
+h1. Current Status
+
+p. Target release, last update, deprecated?
+
+h1. Documentation
+
+p. Where can additional documentation be found?
+
+h1. Dependencies
+
+p. List of dependencies
+
+
+
+
