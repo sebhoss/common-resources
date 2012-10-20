@@ -5,18 +5,17 @@
     This configuration file was written by the eclipse-cs plugin configuration editor
 -->
 <!--
-    Checkstyle-Configuration: sebhoss coding style
+    Checkstyle-Configuration: sebhoss checkstyle config
     Description: 
 Checkstyle configuration from Sebastian Hoß
 -->
 <module name="Checker">
   <property name="severity" value="error"/>
   <module name="TreeWalker">
-    <module name="JavadocMethod">
-      <property name="suppressLoadErrors" value="true"/>
-    </module>
     <module name="JavadocType"/>
-    <module name="JavadocVariable"/>
+    <module name="JavadocVariable">
+      <property name="scope" value="package"/>
+    </module>
     <module name="JavadocStyle"/>
     <module name="ConstantName"/>
     <module name="LocalFinalVariableName"/>
@@ -32,8 +31,13 @@ Checkstyle configuration from Sebastian Hoß
     <module name="RedundantImport"/>
     <module name="UnusedImports"/>
     <module name="MethodLength"/>
-    <module name="ParameterNumber"/>
-    <module name="LineLength"/>
+    <module name="ParameterNumber">
+      <property name="max" value="3"/>
+    </module>
+    <module name="LineLength">
+      <property name="max" value="130"/>
+      <property name="tabWidth" value="4"/>
+    </module>
     <module name="EmptyForIteratorPad"/>
     <module name="MethodParamPad"/>
     <module name="NoWhitespaceAfter"/>
@@ -51,12 +55,16 @@ Checkstyle configuration from Sebastian Hoß
     <module name="NeedBraces"/>
     <module name="RightCurly"/>
     <module name="AvoidInlineConditionals"/>
-    <module name="DoubleCheckedLocking"/>
     <module name="EmptyStatement"/>
     <module name="EqualsHashCode"/>
-    <module name="HiddenField"/>
+    <module name="HiddenField">
+      <property name="ignoreConstructorParameter" value="true"/>
+      <property name="ignoreSetter" value="true"/>
+    </module>
     <module name="IllegalInstantiation"/>
-    <module name="InnerAssignment"/>
+    <module name="InnerAssignment">
+      <property name="tokens" value="BAND_ASSIGN,BOR_ASSIGN,BSR_ASSIGN,BXOR_ASSIGN,DIV_ASSIGN,MINUS_ASSIGN,MOD_ASSIGN,PLUS_ASSIGN,SL_ASSIGN,SR_ASSIGN,STAR_ASSIGN"/>
+    </module>
     <module name="MagicNumber"/>
     <module name="MissingSwitchDefault"/>
     <module name="RedundantThrows">
@@ -64,7 +72,6 @@ Checkstyle configuration from Sebastian Hoß
     </module>
     <module name="SimplifyBooleanExpression"/>
     <module name="SimplifyBooleanReturn"/>
-    <module name="DesignForExtension"/>
     <module name="FinalClass"/>
     <module name="HideUtilityClassConstructor"/>
     <module name="InterfaceIsType"/>
@@ -78,11 +85,14 @@ Checkstyle configuration from Sebastian Hoß
     <module name="MissingOverride"/>
     <module name="PackageAnnotation"/>
     <module name="SuppressWarnings"/>
-    <module name="AbstractClassName"/>
+    <module name="AbstractClassName">
+      <property name="format" value="^Abstract.*$"/>
+    </module>
     <module name="ClassTypeParameterName"/>
     <module name="MethodTypeParameterName"/>
     <module name="AvoidStaticImport"/>
     <module name="ImportOrder">
+      <property name="groups" value="java., javax., org."/>
       <property name="separated" value="true"/>
     </module>
     <module name="AnonInnerLength"/>
@@ -101,7 +111,9 @@ Checkstyle configuration from Sebastian Hoß
       <property name="tokens" value="PARAMETER_DEF,VARIABLE_DEF"/>
     </module>
     <module name="IllegalCatch"/>
-    <module name="IllegalThrows"/>
+    <module name="IllegalThrows">
+      <property name="illegalClassNames" value="java.lang.Error, java.lang.RuntimeException"/>
+    </module>
     <module name="ModifiedControlVariable"/>
     <module name="MultipleStringLiterals"/>
     <module name="MultipleVariableDeclarations"/>
@@ -123,14 +135,15 @@ Checkstyle configuration from Sebastian Hoß
     <module name="CyclomaticComplexity">
       <property name="max" value="3"/>
     </module>
+    <module name="JavadocMethod">
+      <property name="scope" value="public"/>
+      <property name="excludeScope" value="protected"/>
+      <property name="suppressLoadErrors" value="true"/>
+    </module>
   </module>
   <module name="JavadocPackage"/>
   <module name="NewlineAtEndOfFile"/>
   <module name="Translation"/>
   <module name="FileLength"/>
   <module name="FileTabCharacter"/>
-  <module name="RegexpSingleline">
-    <property name="format" value="\s+$"/>
-    <property name="message" value="Line has trailing spaces."/>
-  </module>
 </module>
