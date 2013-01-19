@@ -12,42 +12,12 @@ bc.
     </dependency>
   </dependencies>
   
-h3. Gradle
-
-bc. 
-  dependencies {
-    compile 'com.github.sebhoss.junit.di:junit-dependency-injection-rule:1.0.0-SNAPSHOT'
-  }
-  
-h3. Buildr
-
-bc. 
-  compile.with 'com.github.sebhoss.junit.di:junit-dependency-injection-rule:jar:1.0.0-SNAPSHOT'
-
-h3. Ivy
-
-bc. 
-  <dependencies>
-    <dependency org="com.github.sebhoss.junit.di" name="junit-dependency-injection-rule" rev="1.0.0-SNAPSHOT"/>
-  </dependencies>
-
-h3. sbt
-
-bc. 
-  libraryDependencies ++= Seq(
-    "com.github.sebhoss.junit.di" % "junit-dependency-injection-rule" % "1.0.0-SNAPSHOT"
-  )
-
-h3. Grape
-
-bc. 
-  @Grab(group='com.github.sebhoss.junit.di', module='junit-dependency-injection-rule', version='1.0.0-SNAPSHOT')
 
 h2. Development
 
 h3. License
 
-p. This program is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of the Do What The Fuck You Want To Public License, Version 2, as published by Sam Hocevar. See "http://sam.zoy.org/wtfpl/COPYING":http://sam.zoy.org/wtfpl/COPYING for more details.
+p. This program is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of the Do What The Fuck You Want To Public License, Version 2, as published by Sam Hocevar. See "http://www.wtfpl.net/":http://www.wtfpl.net/ for more details.
 
 h3. Setup
 
