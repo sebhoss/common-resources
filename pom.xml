@@ -22,9 +22,9 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               INFORMATIONS                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <groupId>com.github.sebhoss.common</groupId>
+  <groupId>com.github.sebhoss</groupId>
   <artifactId>common-resources</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <url>https://github.com/sebhoss/common-resources</url>
   <inceptionYear>2012</inceptionYear>
