@@ -37,18 +37,24 @@
   <!--                                  SOURCE                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <scm>
-    <connection>scm:git:git://github.com/sebhoss/common-resources.git</connection>
-    <developerConnection>scm:git:git@github.com:sebhoss/common-resources.git</developerConnection>
+    <connection>${scm.connection}</connection>
+    <developerConnection>${scm.developerConnection}</developerConnection>
     <tag>master</tag>
-    <url>${project.url}</url>
+    <url>${scm.url}</url>
   </scm>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                                  ISSUES                                 -->
+  <!--                                PROPERTIES                               -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <issueManagement>
-    <system>GitHub</system>
-    <url>${project.url}/issues</url>
-  </issueManagement>
+  <properties>
+    <coverage>0</coverage>
+    <pmd.cpd.tokens>50</pmd.cpd.tokens>
+
+    <github.url>http://github.com/sebhoss/common-resources/</github.url>
+    <scm.connection>scm:git:git://github.com/sebhoss/common-resources.git</scm.connection>
+    <scm.developerConnection>scm:git:git@github.com:sebhoss/common-resources.git</scm.developerConnection>
+    <scm.url>http://github.com/sebhoss/common-resources</scm.url>
+    <issueManagement.url>http://github.com/sebhoss/common-resources/issues</issueManagement.url>
+  </properties>
 
 </project>
