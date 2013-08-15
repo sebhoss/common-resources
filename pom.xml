@@ -18,17 +18,16 @@
   <parent>
     <groupId>com.github.sebhoss</groupId>
     <artifactId>superpom</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
 
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               INFORMATIONS                              -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <groupId>com.github.sebhoss</groupId>
   <artifactId>common-resources</artifactId>
   <version>1.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <url>${github.url}</url>
+  <url>http://github.com/sebhoss/common-resources</url>
   <inceptionYear>2012</inceptionYear>
   <name>Common Resources</name>
   <description>Common resources for building software</description>
@@ -37,21 +36,10 @@
   <!--                                  SOURCE                                 -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <scm>
-    <connection>${scm.connection}</connection>
-    <developerConnection>${scm.developerConnection}</developerConnection>
+    <connection>scm:git:git://github.com/sebhoss/common-resources.git</connection>
+    <developerConnection>scm:git:git@github.com:sebhoss/common-resources.git</developerConnection>
     <tag>master</tag>
-    <url>${scm.url}</url>
+    <url>${project.url}</url>
   </scm>
-
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <!--                                PROPERTIES                               -->
-  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <properties>
-    <github.url>http://github.com/sebhoss/common-resources/</github.url>
-    <scm.connection>scm:git:git://github.com/sebhoss/common-resources.git</scm.connection>
-    <scm.developerConnection>scm:git:git@github.com:sebhoss/common-resources.git</scm.developerConnection>
-    <scm.url>http://github.com/sebhoss/common-resources</scm.url>
-    <issueManagement.url>http://github.com/sebhoss/common-resources/issues</issueManagement.url>
-  </properties>
 
 </project>
